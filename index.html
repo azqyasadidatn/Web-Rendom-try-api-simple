@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funfact Web(API learn)</title>
+    <link rel="stylesheet" href="styling.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Aplikasi Latihan API</h1>
+            <p>Ayo latihan ambil data dari API</p>
+        </div>
+        <div class="content">
+            <div class="content-area">
+                <div id="loading" class="loading">
+                    <svg class="animate-spin h-8 w-8 text-blue-500 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    <P>Memuat...</P>
+                </div>
+                <div id="fact-card"class="fact-card">
+                    <h2>Fakta Rendom</h2>
+                    <p id="fact-text">Tekan tombol untuk mengetahui Funfact</p>
+                </div>
+                <div class="eror-message" id="eror-message">
+                    <p>Terjad kesalahan saata mengambil data. Silahkan coba lagi</p>
+                </div>
+                <div class="button-container">
+                    <button class="fetch-button" id="fetch-button">
+                        New Funfact
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
