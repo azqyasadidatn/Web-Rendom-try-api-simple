@@ -55,6 +55,3 @@ async function fatchRandomFact() {
 
 fatchButton.addEventListener('click', fatchRandomFact)
 
-// window.onload=()=>{
-//     fatchRandomFact()
-// }
